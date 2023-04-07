@@ -1,0 +1,67 @@
+  180  cd git/
+  181  mkdir git-majonez
+  182  cd git-majonez/
+  183  git init
+  184  git branch
+  185  git config --global init.defaultBranch master
+  186  git status
+  187  touch main.cpp
+  188  vim main.cpp
+  189  ls
+  190  less main.cpp 
+  191  vim main.cpp
+  192  less main.cpp 
+  193  g++ main.cpp 
+  194  ls
+  195  ./a.out
+  196  git status
+  197  rm a.out 
+  198  ls
+  199  git status
+  200  git add main.cpp 
+  201  git status
+  202  git commit -m"Initial commit"
+  203  vim main.cpp 
+  204  git status
+  205  git add .
+  206  git commit -m"Farewell changed"
+  207  git remote add origin https://github.com/mbroszko/git-majonez.git
+  208  git push -u origin master
+  209  git status
+  210  git branch
+  211  git branch cs
+  212  git branch
+  213  git checkout cs
+  214  git log
+  215  git reset 3d6f7c748185fbf090ccc9c126f18f3749a22a10
+  216  git log
+  217  git status
+  218  git checkout master
+  219  git log
+  220  git branch
+  221  ls
+  222  git status
+  223  vim main.cpp 
+  224  git add .
+  225  git commit -m"Greetings"
+  226  git log
+  227  git checkout master
+  228  git log
+  229  git checkout cs
+  230  git log
+  231  git push origin cs
+  232  git branch
+  233  git checkout master
+  234  git merge cs
+  235  git status
+  236  vim main.cpp 
+  237  git status
+  238  less main.cpp 
+  239  git commit
+  240  git add .
+  241  git status
+  242  git commit
+  243  git log
+  244  git log --graph --date=relative         --format=format:'%C(auto)%h %C(bold blue)%an%C(auto)%d %C(green)%ad%C(reset)%n%w(80,8,8)%s'
+  245  history
+  246  history | tail -n67 > history.txt
